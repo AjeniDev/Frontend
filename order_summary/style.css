@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "RedMedium";
+    src: url(../order_summary/fonts/RedHatDisplay-Medium.otf);
+}
+@font-face {
+    font-family: "RedRegular";
+    src: url(../order_summary/fonts/RedHatDisplay-Regular.otf);
+}
+body{
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    
+    background-size: cover;
+    
+}
+
+
+.box{
+    width: 375px;
+    height: 600px;
+    background-color: white;
+   border-radius: 20px;
+
+}
+.wrapper{
+    width: 375px;
+    height: 600px;
+    border-radius: 20px;
+}
+img{
+    width: 375px;
+height: 150px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+.title{
+    font-family: "RedMedium";
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: small;
+    
+}
+.content{
+    font-family: "RedRegular";
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    margin-left: 70px;
+    text-indent: 14px;
+    
+}
+.content2{
+    font-family: "RedRegular";
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    margin-left: 70px;
+    text-indent: 14px;
+}
+.music{
+    width: 50px;
+    height: 50px;
+    transform: translate(20px, 20px);
+}
+.planBox{
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 320px;
+    height: 100px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 8px;
+}
+.annualText{
+     font-family: "RedRegular";
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    transform: translate(100px, -35px);
+    line-height: 20%;
+}
+h3{
+    font-family: "RedMedium";
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.changeText{
+    font-family: "RedRegular";
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+    font-size: 16px;
+    transform: translate(245px, -55px);
+}
+.changeText:hover{
+    color: hsl(224, 23%, 55%);
+}
+
+.paymentBox{
+    width: 320px;
+    height: 50px;
+    background-color:hsl(245, 75%, 52%);
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-left: 20px;
+    box-shadow:3px 8px 30px 2px hsl(224, 33%, 84%) ;
+    transform: translate(0px, -25px);
+    
+}
+.proceed{
+    font-family: "RedMedium";
+    font-weight: 900;
+    color: white;
+   transform: translate(80px, 12px);
+}
+.pro:link{
+    text-decoration: none;
+}
+.orderText{
+    color: hsl(224, 23%, 55%);
+    font-size: 15px;
+    transform: translate(130px, -10px);
+}
