@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "big";
+    src: url(fonts/BigShouldersDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: "lexenda";
+    src: url(fonts/LexendDeca-Regular.ttf);
+    font-weight: 400px;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    
+}
+.wrapper1 {
+    display: flex;
+    justify-content: center;
+}
+.wrapper2{
+    display: flex;
+    justify-content: center;
+}
+.wrapper3{
+    display: flex;
+    justify-content: center;
+}
+
+.box1{
+    width: 375px;
+    height: 500px;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    align-content: center;
+}
+.box2{
+    width: 375px;
+    
+    height: 500px;
+    background-color: hsl(184, 100%, 22%);
+    align-content: center;
+}
+.box3{
+    width: 375px;
+   
+    height: 500px;
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-content: center;
+}
+img{
+    margin-left: 60px;
+    margin-top: 60px;
+}
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: "big";
+    margin-left: 60px;
+    font-weight: 300px;
+}
+p{
+    font-family: "lexenda";
+    color: hsl(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 400px;
+    transform: translate(60px, 20px);
+}
+.more{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 55px;
+    background-color:hsl(0, 0%, 95%) ;
+    border-radius: 50px;
+    transform: translate(60px, 90px);
+    cursor: pointer;
+}
+.moreText{
+    color: hsl(31, 77%, 52%);
+    font-family: "lexenda";
+    font-size: 15px;
+    font-weight: 400px;
+    transform: translate(0px, 3px);
+}
+.more:hover{
+background-color: transparent;
+border-color: hsl(0, 0%, 95%);
+border-style: solid;
+border-width: medium;
+}
+.moreText:hover{
+    color: hsl(0, 0%, 95%);
+}
+.more:hover .moreText{
+    color: hsl(0, 0%, 95%);
+}
+.moreText2{
+    color: hsl(184, 100%, 22%);
+    font-family: "lexenda";
+    font-size: 15px;
+    font-weight: 400px;
+    transform: translate(0px, 3px);
+}
+.more:hover .moreText2{
+    color: hsl(0, 0%, 95%);
+}
+.moreText3{
+    color: hsl(179, 100%, 13%);
+    font-family: "lexenda";
+    font-size: 15px;
+    font-weight: 400px;
+    transform: translate(0px, 3px);
+}
+.more:hover .moreText3{
+    color: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 1000px) {
+    body{
+        background-color: hsl(0, 0%, 95%);
+        display: flex;
+        flex-direction: row;
+    }
+    .box1{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0px;
+    }
+    .box3{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+        
+    }
+}
