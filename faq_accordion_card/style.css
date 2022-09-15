@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "kumBold";
+    src: url(../faq_accordion_card/fonts/KumbhSans-Bold.ttf);
+}
+@font-face {
+    font-family: "kumMedium";
+    src: url(../faq_accordion_card/fonts/KumbhSans-Medium.ttf);
+}
+@font-face {
+    font-family: "kumSemiBold";
+    src: url(../faq_accordion_card/fonts/KumbhSans-SemiBold.ttf);
+}
+body{
+    /* background-color: hsl(273, 75%, 66%); */
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%) );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.woman{
+width: 300px;
+height: 300px;
+transform: translate(50px, 140px);
+}
+h1{
+    font-family: "kumBold";
+    transform: translate(10px, 20px);
+}
+.container{
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+.wrapper{
+    display: flex;
+     transform: translate(160px, 120px);
+}
+hr{
+    margin-left: 25px;
+    margin-right: 30px;
+}
+
+.accordion{
+
+    transform: translate(0px, 150px);
+    /* max-width: 350px; */
+    /* margin: 0 auto;  */
+}
+
+.header{
+    font-family: "kumMedium";
+    font-size: 12px;
+    display: flex;
+    padding: 10px;
+    padding-left: 27px;
+    cursor: pointer;
+    user-select: none;
+}
+.header:hover{
+    color: hsl(14, 88%, 65%);
+}
+.title{
+    user-select: none;
+    flex: 1;
+}
+.content{
+    font-family: "kumMedium";
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 27px;
+    display: none;
+    user-select: none;
+}
+.icon{
+    margin-right: 30px;
+}
+@media screen and (min-width:1000px){
+    body{
+        min-height: 100vh;
+        background-image: linear-gradient(90deg hsl(240, 73%, 65%),hsl(240, 73%, 65%));
+    }
+    .container{
+        background-color: white;
+        width: 720px;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 25px;
+    }
+    /* .wrapper{
+        display: flex;
+         transform: translate(0px, 120px);
+    } */
+    .accordion{
+
+        transform: translate(250px, 110px);
+        width: 400px;
+        /* margin: 0 auto;  */
+    }
+    h1{
+        transform: translate(300px, -100px);
+    }
+    .woman{
+        width: 350px;
+        height: 350px;
+        transform: translate(-50px, 420px);
+        }
+        .icon{
+            margin-right: 30px;
+        }
+        .title{
+            flex: 1;
+        }
+}
