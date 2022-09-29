@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "SpartanBlack";
+    src: url(../social_proof_section/fonts/LeagueSpartan-Black.ttf);
+}
+
+@font-face {
+    font-family: "SpartanReg";
+    src: url(../social_proof_section/fonts/LeagueSpartan-Regular.ttf);
+}
+
+@font-face {
+    font-family: "SpartanLi";
+    src: url(../social_proof_section/fonts/LeagueSpartan-Light.ttf);
+}
+
+@font-face {
+    font-family: "SpartanBold";
+    src: url(../social_proof_section/fonts/LeagueSpartan-Bold.ttf);
+}
+.bottom_image{
+    width: 375px;
+    height: 50px;
+   transform: translate(0px, -250px);
+   visibility: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    border: solid;
+    border-width: thin;
+    border-color: hsl(300, 24%, 96%);
+    background: url(../social_proof_section/images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.rateText3-new{
+    visibility: hidden;
+}
+.rateText2-new{
+    visibility: hidden;
+}
+
+
+h1 {
+    font-family: "SpartanBlack";
+    Color: hsl(300, 43%, 22%);
+    text-align: center;
+}
+
+.title-3 {
+    text-align: left;
+    transform: translate(10px, -100px);
+    visibility: hidden;
+}
+
+p {
+    font-family: "SpartanBold";
+    text-align: center;
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500px;
+    line-height: 22px;
+}
+
+.title-1 {
+    padding-top: 35px;
+}
+
+.star {
+    transform: translate(130px, 10px);
+}
+
+.rate-1 {
+    height: 70px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+    transform: translate(0px, -80px);
+    width: 350px;
+}
+
+.rate-2 {
+    height: 70px;
+    width: 350px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+    transform: translate(0px, -80px);
+}
+
+.rate-3 {
+    height: 70px;
+    width: 350px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+    transform: translate(0px, -80px);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transform: translate(30px, 40px);
+}
+
+.user-1 {
+    height: 250px;
+    width: 350px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    transform: translate(0px, -70px);
+}
+
+.user-2 {
+    height: 250px;
+    width: 350px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    transform: translate(0px, -70px);
+}
+
+.user-3 {
+    height: 250px;
+    width: 350px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    transform: translate(0px, -70px);
+}
+
+.name {
+    color: hsl(300, 24%, 96%);
+    transform: translate(-40px, -20px);
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+    font-family: "SpartanLi";
+    transform: translate(-40px, -35px);
+}
+
+.main-text {
+    margin-left: 35px;
+    text-align: justify;
+    color: hsl(300, 24%, 96%);
+    font-family: "SpartanLi";
+    font-weight: 500;
+    font-size: 16px;
+    transform: translate(0px, -25px);
+    /* word-spacing: 5px; */
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-container {
+        height: 700px;
+        width: 1440px;
+        display: flex;
+        flex-direction: column;
+        background-size: 500px;
+    }
+
+    h1 {
+        text-align: left;
+        transform: translate(-400px, 700px);
+        font-family: "SpartanBold";
+        font-size: 40px;
+    }
+    .bottom_image{
+        visibility: visible;
+        transform: translate(220px, -675px);
+         width: 1000px;
+         height: 1000px; 
+    }
+    .p1 {
+        text-align: left;
+        transform: translate(-360px, 650px);
+    }
+    .title-2 {
+        visibility: hidden;
+    }
+    .title-3 {
+        visibility: visible;
+    }
+    .user-1{
+        transform: translate(-355px, 350px);
+    }
+    .user-2{
+        transform: translate(35px, 110px);
+    }
+    .user-3{
+        transform: translate(420px, -130px);
+    }
+    .star{
+        transform: translate(50px, 20px);
+    }
+    .rateText3{
+        visibility: hidden;
+        /* transform: translate(80px, 0px); */
+    }
+    .rateText2{
+        visibility: hidden;
+        /* transform: translate(100px, 0px); */
+    }
+    .rateText3-new{
+        visibility: visible;
+        transform: translate(80px, -50px);
+    }
+
+    .rateText2-new{
+        visibility: visible;
+        transform: translate(80px, -50px);
+    }
+    .rateText1{
+        transform: translate(80px, -15px);
+    }
+    .rate-3{
+        width: 450px;
+        height: 60px;
+        transform: translate(330px, 320px);
+    }
+    .rate-2{
+        width: 450px;
+        height: 60px;
+        transform: translate(300px, 320px);
+    }
+.rate-1{
+    width: 450px;
+    height: 60px;
+        transform: translate(250px, 320px);
+}
+}
