@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "popMid";
+    src: url(../sigin_page/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "popReg";
+    src: url(../sigin_page/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "popThin";
+    src: url(../sigin_page/fonts/Poppins-Thin.ttf);
+}
+@font-face {
+    font-family: "popBold";
+    src: url(../sigin_page/fonts/Poppins-Bold.ttf);
+}
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+h1{
+    font-family: "popBold";
+    color: white;
+    line-height: 40px;
+}
+p{
+    font-family: "popReg";
+    font-size: 16px;
+    color: white;
+}
+body{
+    background: url(../images/bg-intro-desktop.png);
+    /* background: url(../sigin_page/images/bg-intro-desktop.png); */
+    background-color: hsl(0, 100%, 74%);
+    width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    transform: translate(0px, -100px);  */
+margin-left: 150px;
+}
+.freeText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px hsl(249, 10%, 26%);
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text1{
+    font-family: "popReg";
+    color: white;
+    font-size: 12px;
+}
+.text2{
+    font-family: "popReg";
+    font-size: 12px;
+    color: hsl(246, 25%, 77%);
+    margin-left: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 370px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 5px hsl(249, 10%, 26%);
+    padding: 20px;
+}
+input{
+    width: 350px;
+    height: 40px;
+    margin-top:10px ;
+    border-radius: 5px;
+    border: solid thin hsl(246, 25%, 77%);
+    padding-left: 20px;
+}
+
+::placeholder{
+    padding-left: 3px;
+}
+button{
+    width: 375px;
+    height: 40px;
+    border-radius:5px ; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0px 4px 2px hsl(154, 81%, 20%);
+    font-family: "popReg";
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}
+.termsText{
+    font-family: "popReg";
+    font-size: 10px;
+    color: hsl(246, 25%, 77%)
+}
+.termsText2{
+    font-family: "popReg";
+    font-size: 10px; 
+    Color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+.title2{
+visibility: hidden;
+}
+.title{
+    margin-top: 180px;
+}
+.form-field.error input {
+    border-color: hsl(0, 100%, 74%);
+}
+
+.form-field .error {
+    color: hsl(0, 100%, 74%);
+}
+.form-field.success input {
+    border-color: hsl(246, 25%, 77%);
+}
+
+.form-field .success {
+    color: hsl(246, 25%, 77%);
+}
+.errorText{
+    height: 8px;
+    color: hsl(0, 100%, 74%);
+    font-family: "popMed";
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 800;
+    margin-left: 200px;
+    transform: translate(30px, 0px);
+}
+.errorIcon{
+    width: 5px;
+    height: 5px;
+    transform: translate(340px, -42px);
+}
+img{
+    visibility: hidden;
+}
+
+/* Mobile Veiw*/
+@media screen and (max-width: 700px) {
+    body{
+        background: url(../images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+        width: 375px;
+        min-height: 100vh;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+   form{
+    width: 350px;
+    height: 430px;
+   }
+   input{
+    width: 320px;
+    padding: 10px;
+   }
+   button{
+    width: 350px;
+    height: 60px;
+   }
+
+   .freeText{
+    width: 385px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+   }
+   .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0px, -120px);
+   }
+   .submit{
+    font-size: 20px;
+   }
+   .title{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 0%; 
+   }
+   .title1{
+    visibility: hidden;
+   }
+   .title2{
+    width: 400px;
+    visibility: visible;
+   transform: translate(0px, -140px);
+   }
+    .errorText{
+    transform: translate(0px, 0px);
+}
+.errorIcon{
+   
+    transform: translate(300px, -50px);
+} 
+}
