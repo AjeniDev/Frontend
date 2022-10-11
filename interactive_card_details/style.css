@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "spaceMed";
+    src: url(../interactive_card_details/fonts/SpaceGrotesk-Medium.ttf);
+}
+
+@font-face {
+    font-family: "spaceRe";
+    src: url(../interactive_card_details/fonts/SpaceGrotesk-Regular.ttf);
+}
+
+.cardFront {
+    width: 447px;
+    height: 245px;
+    background: url(../interactive_card_details/images/bg-card-front.png);
+    border-radius: 12px;
+    box-shadow: 10px 0 30px -6px hsl(300, 0%, 57%);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: url(../interactive_card_details/images/bg-main-desktop.png) no-repeat;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 200px;
+
+}
+
+.card {
+    margin-top: 110px;
+}
+
+.cardBack {
+    width: 447px;
+    height: 245px;
+    background: url(../interactive_card_details/images/bg-card-back.png);
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 10px 0 30px -6px hsl(300, 0%, 57%);
+    transform: translate(0px, 245px);
+    margin-left: 100px;   
+}
+.cardFront{
+    
+    transform: translate(0px, -280px);
+}
+
+
+label {
+    font-family: "spaceMed";
+    font-size: 16px;
+    color: hsl(278, 68%, 11%);
+}
+
+input {
+    width: 350px;
+    height: 30px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-family: "spaceRe";
+    border: solid thin hsl(270, 3%, 87%);
+}
+
+p {
+    font-family: "spaceMed";
+    font-size: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.month {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.year {
+    width: 60px;
+    margin-right: 30px;
+}
+
+.cvc {
+    width: 160px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 360px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+    cursor: pointer;
+    transform: translate(0px, -180px);
+}
+
+
+.form-field.error input {
+    border: solid thin hsl(0, 100%, 66%);
+}
+
+.form-field.success input {
+    border: solid thin hsl(270, 3%, 87%);
+}
+
+.error {
+    /* height: 10px; */
+    color: hsl(0, 100%, 66%);
+    font-family: "spaceMed";
+    font-size: 10px;
+    transform: translate(0px, -20px);
+
+}
+
+/* Card details */
+.monthYear {
+    display: flex;
+    flex-direction: row;
+    margin-top: -64px;
+    margin-left: 360px;
+}
+
+svg {
+    padding: 30px;
+}
+
+.mirrowNumber::placeholder {
+    color: white;
+    font-weight: 500;
+}
+
+.mirrowName::placeholder {
+    color: white;
+    font-weight: 500;
+}
+
+.mirrowMonth::placeholder {
+    color: white;
+    font-weight: 500;
+}
+
+.mirrowYear::placeholder {
+    color: white;
+    font-weight: 500;
+}
+.mirrowCvc::placeholder {
+    color: white;
+    font-weight: 500;
+}
+
+.mirrowNumber {
+    margin-top: 20px;
+    height: 40px;
+    margin-left: 40px;
+    font-family: "spaceRe";
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    background-color: transparent;
+    border: none;
+    letter-spacing: 3px;
+    
+}
+
+.mirrowName {
+    margin-top: -10px;
+    margin-left: 40px;
+    font-family: "spaceRe";
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-variant-caps: all-petite-caps;
+    width: 300px;
+    letter-spacing: 1px;
+}
+
+.mirrowMonth {
+    font-family: "spaceRe";
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-variant-caps: all-petite-caps;
+    width: 20px;
+    letter-spacing: 2px;
+}
+
+.mirrowYear {
+    font-family: "spaceRe";
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-variant-caps: all-petite-caps;
+    width: 20px;
+    padding-left: 0px;
+    letter-spacing: 2px;
+}
+
+.mirrowSlash {
+    font-family: "spaceRe";
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+    margin-right: 2px;
+}
+.mirrowCvc{
+    font-family: "spaceRe";
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: transparent;
+    width: 44px;
+    margin-top: 103px;
+    margin-left: 340px;
+    letter-spacing: 2px;
+}
+.approved{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0px, -200px);
+    visibility: hidden;
+}
+.addedDetails{
+    color: hsl(279, 6%, 55%);
+}
+@media screen and (max-width: 800px) {
+    body{
+        width: 375px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       background-image: none;
+    }
+    .backImage{
+        width: 1000px;
+        height: 350px;
+        background-image: url(../interactive_card_details/images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background: url("../interactive_card_details/images/bg-main-mobile.png"); */
+    }
+    .cardBack{
+        transform: translate(60px, -350px);
+    }
+    .cardFront{
+        transform: translate(100px, -456px);
+    }
+    .card {
+        margin-top:0px ;
+    }
+    form {
+        margin-top: 0px;
+        transform: translate(0px, -400px);
+    
+    }
+}
