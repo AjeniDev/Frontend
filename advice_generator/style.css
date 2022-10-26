@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "outLi";
+    src: url(../advice_generator/fonts/Outfit-Light.ttf);
+}
+@font-face {
+    font-family: "outMed";
+    src: url(../advice_generator/fonts/Outfit-Medium.ttf);
+}
+body{
+    background-color: #202632;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    font-family: "outMed";
+    color: #52ffaa;
+    width: 200px;
+    height: 40px;
+    margin-top: -50px;
+    text-align: center;
+}
+.content{
+    font-family: "outMed";
+    color: #cee2e9;
+    width: 400px;
+    height: 120px;
+    margin-top: 25px;
+    text-align: center;
+    font-size:larger;
+}
+.container{
+    background-color: #313a49;
+    width: 500px;
+    height: 320px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.divider{
+    margin-top: 20px;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    background-color: #52ffaa;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0px, -30px);
+  
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow:0px 0px 20px #52ffaa;
+}
