@@ -1,0 +1,225 @@
+@import url(https://fonts.google.com/specimen/Rubik);
+@font-face {
+    font-family: "Rubuk";
+    src: url(Rubik-Light.ttf);
+}
+p{
+    font-family: "Rubuk";
+    color: hsl(235, 46%, 77%);
+}
+.avatarText2{
+transform: translate(60px, 50px);
+
+}
+.avatarText{
+    transform: translate(60px, 100px); 
+}
+h3{
+    font-family: "Rubuk";
+    font-size: 38px;
+    color: white;
+    font-weight: 300;
+}
+h4{
+    font-family: "Rubuk";
+    color: white;  
+}
+.previous{
+    font-family: "Rubuk";
+    color: hsl(235, 46%, 77%);
+    margin-top: 20px;
+}
+.hour{
+font-size: 64px;
+font-family: "Rubuk";
+color: white;  
+font-weight: 100;
+margin-left: -5px;
+}
+body{
+    display: grid;
+    background-color: hsl(226, 43%, 10%);
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.container{
+    margin-left: 80px;
+    margin-top: 30px;
+    display: grid;
+    width: 1440px;
+    height: auto;
+    grid-template: 
+    "a b  c  d" 80px
+    "a bb cc dd" 260px
+    "a e  f  g" 80px
+    "aa ee ff gg" 260px
+    ;
+    column-gap: 20px;
+}
+svg{
+float: right;
+}
+.profile{
+background-color:hsl(246, 80%, 60%) ;
+grid-area: a;
+border-radius: 10px;
+transform: translate(0px, 20px);
+display: flex;
+flex-direction: column;
+
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url("images/image-jeremy.png");
+    background-size: cover;
+    border: solid medium white;
+    transform: translate(60px, 60px);
+}
+.time{
+    background-color: hsl(235, 46%, 20%);
+    grid-area: aa;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Buttons*/
+button{
+    font-family: "Rubik";
+    width: 80px;
+    height: 50px;
+    color: hsl(235, 45%, 61%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+.monthly{
+    margin-left: 66px;
+    
+}
+button:hover{
+    color: white;
+    font-size: 22px;
+}
+.workIcon{
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 10px;
+    grid-area: b;
+    transform: translate(0px, 20px);
+    /* background-image: url(images\icon-work.svg); */
+}
+.work{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    grid-area: bb;
+    z-index: 10;
+    cursor: pointer;
+    /*addition*/
+    padding-left: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.ellipsis{
+    transform: translate(-40px, -30px);
+
+}
+
+.play{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    grid-area: cc;
+    z-index: 10;
+    cursor: pointer;
+    /*addition*/
+    padding-left: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.playIcon{
+    transform: translate(0px, 20px);
+background-color:hsl(195, 74%, 62%) ;
+border-radius: 10px;
+grid-area: c;
+}
+.studyIcon{
+    transform: translate(0px, 20px);
+    background-color:hsl(348, 100%, 68%) ;
+    border-radius: 10px;
+    grid-area: d;
+}
+.study{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    grid-area: dd;
+    z-index: 10;  
+    cursor: pointer;
+    /*addition*/
+    padding-left: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.exerciseIcon{
+    transform: translate(0px, 20px);
+    background-color:hsl(145, 58%, 55%) ;
+    border-radius: 10px;
+    grid-area: e;
+}
+.exercise{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    grid-area: ee;
+    z-index: 10; 
+    cursor: pointer;
+    /*addition*/
+    padding-left: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.socialIcon{
+    transform: translate(0px, 20px);
+    background-color:hsl(264, 64%, 52%) ;
+    border-radius: 10px;
+    grid-area: f;
+}
+.social{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    grid-area: ff;
+    z-index: 10;  
+    cursor: pointer;
+    /*addition*/
+    padding-left: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.selfCareIcon{
+    transform: translate(0px, 20px);
+    background-color:hsl(43, 84%, 65%) ;
+    border-radius: 10px;
+    grid-area: g;
+}
+.selfCare{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    grid-area: gg;
+    z-index: 10;  
+    cursor: pointer;
+    /*addition*/
+    padding-left: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
